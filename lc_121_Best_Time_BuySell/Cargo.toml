@@ -1,0 +1,6 @@
+[package]
+name = "lc_121_Best_Time_BuySell"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
