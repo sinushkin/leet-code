@@ -3,5 +3,5 @@
 version = 4
 
 [[package]]
-name = "lc_021_Merge_Two_SortedLists"
+name = "lc_021_merge_two_sorted_lists"
 version = "0.1.0"

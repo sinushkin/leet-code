@@ -3,5 +3,5 @@
 version = 4
 
 [[package]]
-name = "lc_020_Valid_Parentheses"
+name = "lc_020_valid_parentheses"
 version = "0.1.0"

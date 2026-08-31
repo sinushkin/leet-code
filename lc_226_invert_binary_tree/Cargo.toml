@@ -1,5 +1,5 @@
 [package]
-name = "lc_226_Invert_Binary_Tree"
+name = "lc_226_invert_binary_tree"
 version = "0.1.0"
 edition = "2024"
 

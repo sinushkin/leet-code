@@ -3,5 +3,5 @@
 version = 4
 
 [[package]]
-name = "lc_121_Best_Time_BuySell"
+name = "lc_121_best_time_buysell"
 version = "0.1.0"
