@@ -1,0 +1,6 @@
+[package]
+name = "lc_232_implement_queue_using_stacks"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
