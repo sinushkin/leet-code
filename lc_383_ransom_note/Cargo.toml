@@ -1,0 +1,6 @@
+[package]
+name = "lc_383_ransom_note"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
