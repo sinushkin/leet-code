@@ -19,7 +19,38 @@ impl Solution {
         }
         return true;
     }
+
+    pub fn can_construct_optimized(ransom_note: String, magazine: String) -> bool {
+        let mut counts = [0i32; 26];
+        for b in magazine.bytes() {
+            counts[(b - b'a') as usize] += 1;
+        }
+        for b in ransom_note.bytes() {
+            let idx = (b - b'a') as usize;
+            counts[idx] -= 1;
+            if counts[idx] < 0 {
+                return false;
+            }
+        }
+        true
+    }
+
+    pub fn can_construct_unicode(ransom_note: String, magazine: String) -> bool {
+        let mut counts: std::collections::HashMap<char, i32> = std::collections::HashMap::new();
+        for c in magazine.chars() {
+            *counts.entry(c).or_insert(0) += 1;
+        }
+        for c in ransom_note.chars() {
+            let entry = counts.entry(c).or_insert(0);
+            *entry -= 1;
+            if *entry < 0 {
+                return false;
+            }
+        }
+        true
+    }
 }
+
 fn main() {
     println!("Hello, world!");
 }
